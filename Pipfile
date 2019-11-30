@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+certifi = "==2019.11.28"
+chardet = "==3.0.4"
+django-filter = "==2.2.0"
+djangorestframework = "==3.10.3"
+idna = "==2.8"
+pytz = "==2019.3"
+requests = "==2.22.0"
+six = "==1.13.0"
+sqlparse = "==0.3.0"
+urllib3 = "==1.25.7"
+Python = "==3.7"
+Django = "==2.2.7"
+Markdown = "==3.1.1"
+pyTelegramBotAPI = "==3.6.6"
+
+[requires]
+python_version = "3.7"
