@@ -25,7 +25,7 @@ SECRET_KEY = 'e_5i#r1@0rlts15$d&%%+)8&+pc5mt=%^sc**c87nns18b8%qx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['git.heroku.com/testbotmy.git']
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
