@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from .models import User
 import telebot
 from .lib import TOKEN
 
@@ -14,8 +15,15 @@ class UpdateBot(APIView):
         bot.process_new_updates([update])
 
         return Response({'code': 200})
+@bot.message_handler(commands=['start'])
+def start(message):
+    bot.send_message(message.chat.id, "It's worked!!!")
+    user = User()
+    user.user_id = message.chat.id
+    user.save()
 
 
 @bot.message_handler(content_types='text')
 def send_Message(message):
-    bot.send_message(message.chat.id, "It's worked!!!")
+    bot.send_message(message.chat.id, "It's worked too!!!")
+
